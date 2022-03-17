@@ -5,10 +5,11 @@ pipeline {
     maven 'Maven' 
   }
   stages {
-	stage('Demo Active Choices Parameter') {
+	stage('Build') {
 	  steps {
 		echo "States Selected ${ApacheTomcatURL}"
 		echo "Cities Selected ${ApacheTomcatURL}"
+		  bat 'mvn clean install'
 	  }
 	}
   }
