@@ -1,7 +1,9 @@
 
 pipeline {
   agent any
-
+ tools {
+    maven 'Maven' 
+  }
   stages {
 	stage('Demo Active Choices Parameter') {
 	  steps {
