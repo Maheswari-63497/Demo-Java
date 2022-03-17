@@ -1,3 +1,17 @@
+
+pipeline {
+  agent any
+
+  stages {
+	stage('Demo Active Choices Parameter') {
+	  steps {
+		echo "States Selected ${ApacheTomcatURL}"
+		echo "Cities Selected ${ApacheTomcatURL}"
+	  }
+	}
+  }
+}
+
 pipeline {
   agent any
   tools {
@@ -9,6 +23,12 @@ pipeline {
 	    	echo "States Selected ${ApacheTomcatURL}"
 		    echo "Cities Selected ${ApacheTomcatURL}"
 	   }        
+	 /*    steps {
+       bat 'mvn clean install'
+        script{
+          echo "Will deploy to ${ApacheTomcatURL}"
+        }
+      }*/
     }
    stage ('Deploy') {
       steps {
@@ -22,3 +42,5 @@ pipeline {
     }
   }
 }
+
+
