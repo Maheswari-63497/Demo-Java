@@ -5,12 +5,10 @@ pipeline {
   }
   stages {
     stage ('Build') {
-      steps {
-       /* bat 'mvn clean install'*/
-        script{
-          echo "Will deploy to ${ApacheTomcatURL}"
-        }
-      }
+       steps {
+	    	echo "States Selected ${ApacheTomcatURL}"
+		    echo "Cities Selected ${ApacheTomcatURL}"
+	   }        
     }
    stage ('Deploy') {
       steps {
