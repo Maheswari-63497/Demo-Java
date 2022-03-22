@@ -31,6 +31,24 @@
         </archive> 
       </configuration>         
     </plugin>     
+      <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<configuration>
+							<attachClasses>true</attachClasses>
+							<failOnMissingWebXml>false</failOnMissingWebXml>
+							<webXml>${basedir}/src/main/webapp/WEB-INF/web.xml</webXml>
+						</configuration>
+						<goals>
+							<goal>inplace</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
     </plugins>
   </build>
   <dependencies>
