@@ -32,6 +32,13 @@
       </executions>
         <configuration>
           <filename>ProjectJAR/project</filename>
+          <archive> 
+            <manifest> 
+              <addClasspath>true</addClasspath> 
+              <classpathPrefix>libs/</classpathPrefix> 
+              <mainClass> Hello </mainClass> 
+            </manifest> 
+          </archive> 
       </configuration>
     </plugin>     
     </plugins>
