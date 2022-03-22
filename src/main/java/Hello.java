@@ -23,4 +23,9 @@ public class Hello extends HttpServlet {
       PrintWriter out = response.getWriter();
       out.println("<h1>" + message + "</h1>");
    }
+   
+   public static void main(String[] args)
+   {
+      System.out.println("Welcome to Maven Jar Plugin");
+   }
 }
