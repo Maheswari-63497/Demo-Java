@@ -26,7 +26,6 @@
       <plugin>
           <artifactId>sonar-plugin-api</artifactId>
           <version>9.4.0.54424</version>
-          <scope>provided</scope>
       </plugin>
       <plugin>
       <artifactId>maven-assembly-plugin</artifactId>
