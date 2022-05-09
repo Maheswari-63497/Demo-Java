@@ -45,7 +45,7 @@
         </execution>
       </executions>
     </plugin>
-      <plugin>
+       <plugin>
           <artifactId>sonar-plugin-api</artifactId>
           <version>9.4.0.54424</version>
       </plugin>
