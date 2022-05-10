@@ -9,16 +9,16 @@ pipeline {
         bat 'mvn clean package'
       }
     }
-    stage('SonarQube analysis') {
+    /*stage('SonarQube analysis') {
 	   steps{
 	     withSonarQubeEnv(installationName: 'SonarQubedefault')
      	     {
 		     // withSonarQubeEnv(credentialsId: 'f225455e-ea59-40fa-8af7-08176e86507a', installationName: 'My SonarQube Server')		     
 		     // You can override the credential to be used
-			bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:4.7.0.2747:sonar'
+			bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar'
     	     }
-	}   
-    }
+	    }   
+    }*/
    stage ('Deploy') {
       steps {
         script {
