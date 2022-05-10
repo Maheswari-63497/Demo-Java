@@ -8,7 +8,7 @@ pipeline {
 	stage('Build') {
 	  steps {
 		/* echo "Apache Server URL: ${ApacheTomcatURL}" */
-		bat 'mvn clean install'
+		bat 'mvn clean install sonar:sonar'
 	  }
      }
   stage ('Deploy') {
