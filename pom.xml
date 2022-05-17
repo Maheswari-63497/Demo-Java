@@ -7,6 +7,13 @@
   <version>1.0-SNAPSHOT</version>
   <name>Demo Maven Webapp</name>
   <url>https://github.com/tongueroo/demo-java</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <sonar.java.source>1.8</sonar.java.source>
+  </properties>
+
   <build>
     <finalName>demo</finalName>
     <sourceDirectory>src</sourceDirectory>
