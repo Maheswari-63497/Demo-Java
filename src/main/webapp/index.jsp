@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
    <head> <title>Index</title></head>
 <body>
 <h2>Hello World: src/main/webapp/index.jsp</h2>
