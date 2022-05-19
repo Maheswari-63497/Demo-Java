@@ -7,9 +7,10 @@ import javax.servlet.http.*;
 public class Hello extends HttpServlet {
 
    private String message;
-
+   @Override
    public void init() throws ServletException {
       // Do required initialization
       message = "Hello World: src/main/java/Hello.java";
+      System.out.println(message);
    }
 }
