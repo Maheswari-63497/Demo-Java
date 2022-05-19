@@ -71,11 +71,6 @@
         </execution>
       </executions>
     </plugin>
-       <!--<plugin>
-          <groupId>org.sonarsource.scanner.maven</groupId>
-          <artifactId>sonar-maven-plugin</artifactId>
-          <version>3.7.0.1746</version>
-        </plugin>-->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
@@ -125,20 +120,6 @@
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
         <version>3.1.0</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.sonarsource.sonarqube/sonar-plugin-api
-    <dependency>
-        <groupId>org.sonarsource.sonarqube</groupId>
-        <artifactId>sonar-plugin-api</artifactId>
-        <version>9.4.0.54424</version>
-        <scope>provided</scope>
-    </dependency> -->
-  <!-- <dependency>
-    <groupId>org.sonarsource.sonarqube</groupId>
-    <artifactId>sonar-plugin-api</artifactId>
-    <version>9.4.0.54424</version>
-    <scope>provided</scope>
-</dependency> -->
-  
+    </dependency>   
   </dependencies>
 </project>
