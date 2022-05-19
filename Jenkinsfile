@@ -18,5 +18,15 @@ pipeline {
                 }
             }
         }
+	stage("Deploy")
+	{
+	    steps {
+                script {
+                    deploy adapters: [tomcat9(credentialsId: 'ApacheTomcatadmin', path: '', url: 'http://localhost:5000/')], contextPath: null, war: 'target/*.war'
+                }
+            }
+	}
+
+
     }
 }
